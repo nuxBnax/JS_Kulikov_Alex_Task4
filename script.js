@@ -88,9 +88,17 @@ console.log(`Минимальным числом в массиве ${arr} явл
 
 // *Необязательное задание. *
 // Необходимо вывести горку в консоль (используя цикл for), как показано на рисунке, только у вашей горки должно быть 20 рядов, а не 5:
-
 // x
 // xx
 // xxx
 // xxxx
 // xxxxx
+
+function rock(symbol, repeat) {
+    let str = '';
+    for (let i = 0; i < repeat; i++) {
+        str = str + symbol;
+        console.log(str);
+    }
+}
+rock('х', 20);
